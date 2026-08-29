@@ -70,7 +70,7 @@ export const HeroSection: React.FC = () => {
             {/* Inner Picture Container with Arch Top */}
             <div className="relative overflow-hidden rounded-t-[90px] rounded-b-sm border-2 border-[#FCF9F3] bg-[#F4EDE0] aspect-[3/4]">
               <img
-                src="/images/couple-hero.jpg"
+                src="/images/couple-hero.jpeg"
                 alt="Dr. K.Sb. Vedha Varsha and Er. T.K. Balaji"
                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 loading="eager"

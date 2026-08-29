@@ -1,5 +1,5 @@
 import React from 'react';
-import { TempleCrown, GoldCorner, KolamDivider, Kuthuvilakku } from './Ornaments';
+import { TempleCrown, GoldCorner, KolamDivider } from './Ornaments';
 import { triggerAuspiciousPetals } from './PetalShower';
 import { Sparkles, Heart } from 'lucide-react';
 
@@ -38,7 +38,7 @@ export const ClosingSection: React.FC = () => {
           </div>
 
           {/* Couple Names in Grand Closing Typography */}
-          <div className="space-y-2">
+          <div className="space-y-2 text-center">
             <div>
               <span className="block font-cormorant italic text-sm text-[#E5C378]">
                 Sowbagyavathi.
@@ -70,51 +70,60 @@ export const ClosingSection: React.FC = () => {
             </div>
           </div>
 
-          <KolamDivider className="my-6 max-w-xs opacity-60" />
+          <KolamDivider className="my-6 max-w-xs opacity-60 mx-auto" />
 
-          {/* Closing Blessing Quote */}
-          <p className="font-cormorant italic text-lg sm:text-2xl text-[#FFF2CC] max-w-md mx-auto leading-relaxed font-normal">
-            Your Love And blessings will light their path
-          </p>
-
-          <div className="w-12 h-[1px] bg-[#C5A059]/50 mx-auto my-4" />
-
-          {/* Compliments */}
-          <div className="mt-4">
-            <p className="font-cormorant italic text-sm sm:text-base text-[#E5C378]">
-              With best compliment from
+          {/* Closing Content After Divisor - Centered */}
+          <div className="flex flex-col items-center justify-center text-center w-full">
+            {/* Closing Blessing Quote */}
+            <p className="font-cormorant italic text-lg sm:text-2xl text-[#FFF2CC] max-w-md mx-auto leading-relaxed font-normal text-center">
+              Your Love And blessings will light their path
             </p>
-            <p className="font-cinzel font-bold text-base sm:text-lg text-[#FFF2CC] tracking-[0.16em] uppercase mt-1">
-              Relatives &amp; Friends
-            </p>
-          </div>
 
-          {/* Interactive "Shower Blessings" (Pushpanjali) Button */}
-          <div className="mt-8 pt-4 border-t border-[#C5A059]/30 flex justify-center">
-            <button
-              onClick={triggerAuspiciousPetals}
-              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-gradient-to-r from-[#C5A059] via-[#E5C378] to-[#C5A059] text-[#3A0810] font-cinzel font-bold text-xs tracking-[0.18em] uppercase shadow-[0_10px_20px_-5px_rgba(229,195,120,0.4)] hover:brightness-105 active:scale-95 transition-all duration-300"
-            >
-              <Sparkles className="w-4 h-4 text-[#3A0810]" />
-              Shower Blessings
-              <Heart className="w-3.5 h-3.5 fill-[#3A0810] text-[#3A0810]" />
-            </button>
+            <div className="w-12 h-[1px] bg-[#C5A059]/50 mx-auto my-4" />
+
+            {/* Compliments */}
+            <div className="mt-2 flex flex-col items-center justify-center text-center">
+              <p className="font-cormorant italic text-sm sm:text-base text-[#E5C378] text-center">
+                With best compliment from
+              </p>
+              <p className="font-cinzel font-bold text-base sm:text-lg text-[#FFF2CC] tracking-[0.16em] uppercase mt-1 text-center">
+                Relatives &amp; Friends
+              </p>
+            </div>
+
+            {/* Interactive "Shower Blessings" (Pushpanjali) Button */}
+            <div className="mt-8 pt-4 border-t border-[#C5A059]/30 flex justify-center w-full">
+              <button
+                onClick={triggerAuspiciousPetals}
+                className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-gradient-to-r from-[#C5A059] via-[#E5C378] to-[#C5A059] text-[#3A0810] font-cinzel font-bold text-xs tracking-[0.18em] uppercase shadow-[0_10px_20px_-5px_rgba(229,195,120,0.4)] hover:brightness-105 active:scale-95 transition-all duration-300"
+              >
+                <Sparkles className="w-4 h-4 text-[#3A0810]" />
+                Shower Blessings
+                <Heart className="w-3.5 h-3.5 fill-[#3A0810] text-[#3A0810]" />
+              </button>
+            </div>
           </div>
 
         </div>
 
-        {/* Traditional Footer Mark */}
-        <div className="flex items-center justify-center gap-6 mt-12 text-[#C5A059]/60">
-          <Kuthuvilakku height={45} />
-          <div className="text-center">
-            <p className="font-cinzel text-[10px] tracking-[0.3em] uppercase text-[#E5C378]">
-              || மங்கல வாழ்த்துக்கள் ||
-            </p>
-            <p className="font-cormorant italic text-xs text-[#FAF6F0]/70 mt-0.5">
-              Sri Vasavi Mahal · Trichy · 17.09.2026
-            </p>
+        {/* Traditional Footer Mark with Centered Logo */}
+        <div className="flex flex-col items-center justify-center text-center mt-12 sm:mt-14 w-full">
+          <p className="font-cinzel text-xs sm:text-sm tracking-[0.3em] uppercase text-[#E5C378] font-semibold text-center">
+            || மங்கல வாழ்த்துக்கள் ||
+          </p>
+          <p className="font-cormorant italic text-xs sm:text-sm text-[#FAF6F0]/80 mt-1 sm:mt-1.5 text-center">
+            Sri Vasavi Mahal · Trichy · 17.09.2026
+          </p>
+
+          {/* Centered Logo */}
+          <div className="mt-4 sm:mt-5 flex items-center justify-center">
+            <img
+              src="https://res.cloudinary.com/dmjnyfa02/image/upload/v1779039724/w3_gnsezu.webp"
+              alt="Logo"
+              className="h-10 sm:h-12 w-auto max-w-[130px] sm:max-w-[150px] object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.4)] transition-opacity duration-300 hover:opacity-95"
+              loading="lazy"
+            />
           </div>
-          <Kuthuvilakku height={45} />
         </div>
 
       </div>

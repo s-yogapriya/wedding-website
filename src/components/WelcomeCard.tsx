@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, Sparkles } from 'lucide-react';
-import { Kuthuvilakku, TempleCrown, GoldCorner, KolamDivider, JasmineGarland } from './Ornaments';
+import { TempleCrown, GoldCorner, KolamDivider, JasmineGarland } from './Ornaments';
 import { triggerAuspiciousPetals } from './PetalShower';
 
 interface WelcomeCardProps {
@@ -67,63 +67,28 @@ export const WelcomeCard: React.FC<WelcomeCardProps> = ({ onOpen, isUnlocked }) 
 
         {/* Parents Section with Authentic Studio Portraits on Left & Right */}
         <div className="relative my-4 sm:my-6 px-1 sm:px-4">
-          <div className="flex items-center justify-between gap-3 sm:gap-6">
-            {/* Left Kuthuvilakku Lamp on Desktop */}
-            <div className="hidden md:block">
-              <Kuthuvilakku height={100} />
-            </div>
-
-            {/* Mother Portrait (LEFT) */}
-            <div className="flex flex-col items-center text-center flex-1 max-w-[170px] sm:max-w-[190px]">
-              <div className="relative p-1 rounded-full bg-gradient-to-b from-[#FFF2CC] via-[#C5A059] to-[#8C6623] shadow-md group">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#FCF9F3] bg-[#F4EDE0]">
-                  <img
-                    src="/images/bride-mother.jpg"
-                    alt="Smt. S. GAYATHRI"
-                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                    loading="eager"
-                  />
-                </div>
-                <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-[#4A0E17] text-[#FAF6F0] text-[9px] font-cinzel px-2 py-0.5 rounded-full whitespace-nowrap border border-[#C5A059]/60">
-                  Mother
-                </span>
+ 
+          {/* Parents Section - Single Landscape Family Portrait */}
+          <div className="relative my-4 sm:my-6 px-3 sm:px-6">
+            <div className="flex flex-col items-center text-center">
+              
+              {/* Landscape Family Photo */}
+              <div className="relative w-full max-w-[420px] sm:max-w-[500px] overflow-hidden rounded-xl border-2 border-[#C5A059] bg-[#F4EDE0] shadow-md">
+                <img
+                  src="/images/totalfamily.jpg.jpeg"
+                  alt="Family Portrait"
+                  className="w-full aspect-[16/9] object-cover object-center"
+                  loading="eager"
+                />
               </div>
-              <h3 className="font-cinzel font-bold text-xs sm:text-sm text-[#4A0E17] mt-3 tracking-wide leading-tight">
-                Smt. S. GAYATHRI
-              </h3>
-            </div>
 
-            {/* Center Sacred Diya Lamp on Mobile */}
-            <div className="md:hidden">
-              <Kuthuvilakku height={85} />
-            </div>
+              {/* Parents Names - Single Line */}
+              <p className="font-cinzel font-bold text-xs sm:text-lg text-[#4A0E17] mt-3 tracking-wide leading-tight whitespace-nowrap">
+                Smt. S. GAYATHRI  &   Sri KASULA G. SATHISH BABU
+              </p>
 
-            {/* Father Portrait (RIGHT) */}
-            <div className="flex flex-col items-center text-center flex-1 max-w-[170px] sm:max-w-[190px]">
-              <div className="relative p-1 rounded-full bg-gradient-to-b from-[#FFF2CC] via-[#C5A059] to-[#8C6623] shadow-md group">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#FCF9F3] bg-[#F4EDE0]">
-                  <img
-                    src="/images/bride-father.jpg"
-                    alt="Sri KASULA G. SATHISH BABU"
-                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                    loading="eager"
-                  />
-                </div>
-                <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-[#4A0E17] text-[#FAF6F0] text-[9px] font-cinzel px-2 py-0.5 rounded-full whitespace-nowrap border border-[#C5A059]/60">
-                  Father
-                </span>
-              </div>
-              <h3 className="font-cinzel font-bold text-xs sm:text-sm text-[#4A0E17] mt-3 tracking-wide leading-tight">
-                Sri KASULA G. SATHISH BABU
-              </h3>
-            </div>
-
-            {/* Right Kuthuvilakku Lamp on Desktop */}
-            <div className="hidden md:block">
-              <Kuthuvilakku height={100} />
             </div>
           </div>
-
           {/* Parents Medical Establishment */}
           <p className="text-center font-cormorant italic text-sm sm:text-base text-[#8C6623] font-medium mt-3">
             (Sri Venkateswara Siddha Medical, Trichy)

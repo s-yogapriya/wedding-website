@@ -1,5 +1,5 @@
 import React from 'react';
-import { Kuthuvilakku, TempleCrown, GoldCorner, KolamDivider } from './Ornaments';
+import { TempleCrown, GoldCorner, KolamDivider } from './Ornaments';
 
 export const InvitationBlessings: React.FC = () => {
   return (
@@ -41,61 +41,39 @@ export const InvitationBlessings: React.FC = () => {
         <KolamDivider className="my-8 max-w-xs" />
 
         {/* Section 7: Family / Blessings Section */}
-        <div className="w-full max-w-2xl bg-gradient-to-b from-[#FAF6F0] to-[#F5ECE0] rounded-2xl p-6 sm:p-10 border border-[#C5A059]/50 shadow-md">
+        <div className="w-full max-w-2xl bg-gradient-to-b from-[#FAF6F0] to-[#F5ECE0] rounded-2xl p-5 sm:p-8 border border-[#C5A059]/50 shadow-md">
           <p className="font-cinzel text-xs tracking-[0.28em] uppercase text-[#8C6623] font-semibold mb-1">
             With Solicitations Of
           </p>
-          <h3 className="font-cinzel-dec font-bold text-xl sm:text-2xl text-[#4A0E17] tracking-wider mb-6">
+          <h3 className="font-cinzel-dec font-bold text-xl sm:text-2xl text-[#4A0E17] tracking-wider mb-2 sm:mb-3">
             The Bride's Parents
           </h3>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12 my-2">
-            
-            {/* Mother */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-gradient-to-b from-[#FFF2CC] to-[#8C6623] shadow-md mb-3">
+          <div className="flex flex-col items-center text-center mt-2 sm:mt-3 w-full">
+            {/* Photo Frame */}
+            <div className="relative w-full max-w-[430px] sm:max-w-[460px]">
+              <div className="overflow-hidden rounded-xl border-2 border-[#C5A059] bg-[#F4EDE0] shadow-md">
                 <img
-                  src="/images/bride-mother.jpg"
-                  alt="Smt. S. GAYATHRI"
-                  className="w-full h-full object-cover object-top rounded-full border-2 border-[#FAF6F0]"
-                  loading="lazy"
+                  src="/images/brideparents.jpeg"
+                  alt="Bride's Parents"
+                  className="block w-full h-auto object-contain scale-[1.1]"
+                  loading="eager"
                 />
               </div>
-              <h4 className="font-cinzel font-bold text-sm sm:text-base text-[#4A0E17] tracking-wide">
-                Smt. S. GAYATHRI
-              </h4>
-              <span className="font-cormorant italic text-xs sm:text-sm text-[#8C6623]">
-                Mother of the Bride
-              </span>
             </div>
 
-            {/* Sacred Lamp Separator */}
-            <div className="hidden sm:block">
-              <Kuthuvilakku height={75} />
+            {/* Names */}
+            <div className="mt-2 px-2">
+              <p className="font-cinzel font-bold text-xs sm:text-sm md:text-base text-[#4A0E17] tracking-wide leading-tight">
+                SMT. S. GAYATHRI
+                <span className="mx-2 sm:mx-3">&</span>
+                SRI KASULA G. SATHISH BABU
+              </p>
             </div>
-
-            {/* Father */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-gradient-to-b from-[#FFF2CC] to-[#8C6623] shadow-md mb-3">
-                <img
-                  src="/images/bride-father.jpg"
-                  alt="Sri KASULA G. SATHISH BABU"
-                  className="w-full h-full object-cover object-top rounded-full border-2 border-[#FAF6F0]"
-                  loading="lazy"
-                />
-              </div>
-              <h4 className="font-cinzel font-bold text-sm sm:text-base text-[#4A0E17] tracking-wide">
-                Sri KASULA G. SATHISH BABU
-              </h4>
-              <span className="font-cormorant italic text-xs sm:text-sm text-[#8C6623]">
-                Father of the Bride
-              </span>
-            </div>
-
           </div>
 
           {/* Medical Firm Details */}
-          <div className="mt-6 pt-4 border-t border-[#C5A059]/30">
+          <div className="mt-6 sm:mt-7 pt-4 sm:pt-5 border-t border-[#C5A059]/30">
             <p className="font-cinzel font-semibold text-xs sm:text-sm text-[#4A0E17] tracking-wider">
               (Sri Venkateswara Siddha Medical, Trichy)
             </p>
