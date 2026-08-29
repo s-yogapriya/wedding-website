@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ivory-base: #FAF6F0;
+    --ivory-card: #FCF9F2;
+    --ivory-warm: #F4EDE0;
+    --maroon-deep: #3A0810;
+    --maroon-royal: #4A0E17;
+    --maroon-rich: #5E1120;
+    --maroon-accent: #7A192B;
+    --gold-antique: #B88A3B;
+    --gold-royal: #C5A059;
+    --gold-bright: #E5C378;
+    --gold-light: #F6E6C2;
+    --gold-dark: #8C6623;
+    --sand-tint: #E8DDCB;
+    --ink-black: #241214;
+    --kumkum-red: #A31E2A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--ivory-base);
+    color: var(--ink-black);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom typography utility classes */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-cinzel-dec {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-marcellus {
+  font-family: 'Marcellus', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Pinyon Script', cursive;
+}
+
+.font-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-body-alt {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Gold Gradient & Shimmer */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #8C6623 0%, #C5A059 25%, #F6E6C2 50%, #C5A059 75%, #8C6623 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-text-sheen {
+  background: linear-gradient(120deg, #B88A3B 0%, #D4AF37 40%, #FFF2CC 50%, #D4AF37 60%, #8C6623 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s linear infinite;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(135deg, #8C6623, #C5A059, #F6E6C2, #C5A059, #8C6623) 1;
+}
+
+.gold-box-shadow {
+  box-shadow: 0 10px 30px -10px rgba(74, 14, 23, 0.15), 0 0 0 1px rgba(197, 160, 89, 0.35);
+}
+
+.gold-box-shadow-lg {
+  box-shadow: 0 20px 45px -15px rgba(58, 8, 16, 0.25), 0 0 0 1px rgba(197, 160, 89, 0.45);
+}
+
+.gold-glow {
+  filter: drop-shadow(0 0 8px rgba(229, 195, 120, 0.6));
+}
+
+/* Paper Grain Texture */
+.paper-texture {
+  background-image: radial-gradient(rgba(197, 160, 89, 0.08) 1px, transparent 1px), radial-gradient(rgba(74, 14, 23, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.card-noise {
+  position: relative;
+}
+.card-noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 1;
+}
+
+/* Diya Lamp Flame Animation */
+@keyframes flameFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 -4px 8px rgba(245, 158, 11, 0.8));
+  }
+  25% {
+    transform: scale(1.06, 0.96) rotate(1.5deg);
+    opacity: 1;
+    filter: drop-shadow(0 -5px 12px rgba(251, 191, 36, 0.95));
+  }
+  50% {
+    transform: scale(0.96, 1.04) rotate(-2deg);
+    opacity: 0.9;
+    filter: drop-shadow(0 -3px 7px rgba(217, 119, 6, 0.8));
+  }
+  75% {
+    transform: scale(1.03, 0.98) rotate(0.8deg);
+    opacity: 0.98;
+    filter: drop-shadow(0 -6px 14px rgba(245, 158, 11, 0.9));
+  }
+}
+
+.animate-flame {
+  transform-origin: bottom center;
+  animation: flameFlicker 2.8s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 5s ease-in-out infinite;
+}
+
+@keyframes slowPulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.03); }
+}
+
+.animate-slow-pulse {
+  animation: slowPulse 3.5s ease-in-out infinite;
+}
+
+/* Wax Seal Styling */
+.wax-seal-btn {
+  background: radial-gradient(circle at 35% 30%, #E5C378 0%, #C5A059 22%, #997028 55%, #6B4913 85%, #422906 100%);
+  box-shadow: 
+    0 12px 28px -5px rgba(58, 8, 16, 0.5),
+    0 2px 6px rgba(0, 0, 0, 0.2),
+    inset 0 2px 4px rgba(255, 255, 255, 0.4),
+    inset 0 -4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.wax-seal-btn:hover {
+  filter: brightness(1.06);
+  transform: scale(1.03);
+}
+
+.wax-seal-btn:active {
+  transform: scale(0.98);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8C6623;
+}
