@@ -59,7 +59,7 @@ export const HeroSection: React.FC = () => {
         <KolamDivider className="my-4 max-w-xs" />
 
         {/* Editorial Couple Photograph #1 (Outdoor couple photo) */}
-        <div className="relative mt-4 mb-8 w-full max-w-sm sm:max-w-md mx-auto group">
+        <div className="relative mt-4 mb-8 w-full max-w-[310px] sm:max-w-[380px] md:max-w-[420px] mx-auto group">
           {/* Decorative Outer Arch Gold Frame */}
           <div className="relative p-2.5 sm:p-3.5 bg-gradient-to-b from-[#FFF2CC] via-[#C5A059] to-[#8C6623] rounded-t-[100px] rounded-b-lg shadow-[0_20px_50px_-10px_rgba(74,14,23,0.3)]">
             
@@ -68,16 +68,16 @@ export const HeroSection: React.FC = () => {
             <GoldCorner position="br" size={32} className="absolute bottom-2 right-2 z-10" />
 
             {/* Inner Picture Container with Arch Top */}
-            <div className="relative overflow-hidden rounded-t-[90px] rounded-b-sm border-2 border-[#FCF9F3] bg-[#F4EDE0] aspect-[3/4]">
+            <div className="relative overflow-hidden rounded-t-[90px] rounded-b-sm border-2 border-[#FCF9F3] bg-[#F4EDE0] aspect-[2/3]">
               <img
                 src="/images/couple-hero.jpeg"
                 alt="Dr. K.Sb. Vedha Varsha and Er. T.K. Balaji"
-                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-cover object-[center_12%] transition-transform duration-700 group-hover:scale-105"
                 loading="eager"
               />
               
               {/* Subtle Warm Vignette Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#3A0810]/30 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#3A0810]/25 via-transparent to-transparent pointer-events-none" />
             </div>
 
             {/* Floating Gold Date Badge */}

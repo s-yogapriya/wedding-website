@@ -155,7 +155,7 @@ export const MuhurthamDetails: React.FC = () => {
                   rounded-b-lg
                   border-2
                   border-[#FCF9F3]
-                  aspect-[4/5]
+                  aspect-[2/3]
                   bg-[#F4EDE0]
                 "
               >
@@ -169,7 +169,7 @@ export const MuhurthamDetails: React.FC = () => {
                     w-full
                     h-full
                     object-cover
-                    object-center
+                    object-[center_10%]
                     transition-transform
                     duration-700
                     group-hover:scale-105
@@ -183,7 +183,7 @@ export const MuhurthamDetails: React.FC = () => {
                     absolute
                     inset-0
                     bg-gradient-to-t
-                    from-[#3A0810]/25
+                    from-[#3A0810]/20
                     via-transparent
                     to-transparent
                     pointer-events-none

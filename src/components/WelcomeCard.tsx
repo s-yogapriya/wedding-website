@@ -69,7 +69,7 @@ export const WelcomeCard: React.FC<WelcomeCardProps> = ({ onOpen, isUnlocked }) 
         <div className="relative my-4 sm:my-6 px-1 sm:px-4">
  
           {/* Parents Section - Single Landscape Family Portrait */}
-          <div className="relative my-4 sm:my-6 px-3 sm:px-6">
+          <div className="relative my-4 sm:my-6 px-1 sm:px-4">
             <div className="flex flex-col items-center text-center">
               
               {/* Landscape Family Photo */}
@@ -77,15 +77,23 @@ export const WelcomeCard: React.FC<WelcomeCardProps> = ({ onOpen, isUnlocked }) 
                 <img
                   src="/images/totalfamily.jpg.jpeg"
                   alt="Family Portrait"
-                  className="w-full aspect-[16/9] object-cover object-center"
+                  className="w-full h-auto object-contain block transition-transform duration-500 hover:scale-[1.02]"
                   loading="eager"
                 />
               </div>
 
-              {/* Parents Names - Single Line */}
-              <p className="font-cinzel font-bold text-xs sm:text-lg text-[#4A0E17] mt-3 tracking-wide leading-tight whitespace-nowrap">
-                Smt. S. GAYATHRI  &   Sri KASULA G. SATHISH BABU
-              </p>
+              {/* Parents Names - 3 centered lines on mobile, single line on desktop */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-2.5 mt-3 px-2 text-center">
+                <span className="font-cinzel font-bold text-xs sm:text-base md:text-lg text-[#4A0E17] tracking-wide leading-tight">
+                  Smt. S. GAYATHRI
+                </span>
+                <span className="font-script text-base sm:text-lg md:text-xl text-[#B88A3B] leading-none px-1">
+                  &amp;
+                </span>
+                <span className="font-cinzel font-bold text-xs sm:text-base md:text-lg text-[#4A0E17] tracking-wide leading-tight">
+                  Sri KASULA G. SATHISH BABU
+                </span>
+              </div>
 
             </div>
           </div>
