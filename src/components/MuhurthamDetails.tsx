@@ -82,7 +82,7 @@ export const MuhurthamDetails: React.FC = () => {
             mb-3
           "
         >
-          Wedding Day Details
+          Celebration Day Details
         </h2>
 
         <KolamDivider
@@ -239,6 +239,136 @@ export const MuhurthamDetails: React.FC = () => {
                 card-noise
               "
             >
+
+              {/* =========================
+                  ENGAGEMENT
+              ========================== */}
+
+              <div
+                className="
+                  flex
+                  items-center
+                  justify-between
+                  border-b
+                  border-[#C5A059]/30
+                  pb-4
+                  mb-6
+                "
+              >
+
+                <div className="flex items-center gap-3">
+
+                  <div
+                    className="
+                      p-2.5
+                      rounded-full
+                      bg-[#4A0E17]
+                      text-[#FAF6F0]
+                      shadow-sm
+                      shrink-0
+                    "
+                  >
+                    <Clock className="w-5 h-5 text-[#FFF2CC]" />
+                  </div>
+
+                  <div>
+
+                    <span
+                      className="
+                        font-cinzel
+                        text-[10px]
+                        tracking-[0.2em]
+                        uppercase
+                        text-[#8C6623]
+                        font-semibold
+                        block
+                      "
+                    >
+                      Engagement
+                    </span>
+
+                    <h3
+                      className="
+                        font-cinzel
+                        font-bold
+                        text-lg
+                        sm:text-xl
+                        text-[#4A0E17]
+                      "
+                    >
+                      16/09/2026 — 10:00 AM
+                    </h3>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              {/* =========================
+                  RECEPTION
+              ========================== */}
+
+              <div
+                className="
+                  flex
+                  items-center
+                  justify-between
+                  border-b
+                  border-[#C5A059]/30
+                  pb-4
+                  mb-6
+                "
+              >
+
+                <div className="flex items-center gap-3">
+
+                  <div
+                    className="
+                      p-2.5
+                      rounded-full
+                      bg-[#4A0E17]
+                      text-[#FAF6F0]
+                      shadow-sm
+                      shrink-0
+                    "
+                  >
+                    <Clock className="w-5 h-5 text-[#FFF2CC]" />
+                  </div>
+
+                  <div>
+
+                    <span
+                      className="
+                        font-cinzel
+                        text-[10px]
+                        tracking-[0.2em]
+                        uppercase
+                        text-[#8C6623]
+                        font-semibold
+                        block
+                      "
+                    >
+                      Reception
+                    </span>
+
+                    <h3
+                      className="
+                        font-cinzel
+                        font-bold
+                        text-lg
+                        sm:text-xl
+                        text-[#4A0E17]
+                      "
+                    >
+                      16/09/2026 — 6:00 PM
+                    </h3>
+
+                  </div>
+
+                </div>
+
+              </div>
 
               {/* =========================
                   AUSPCIOUS DATE

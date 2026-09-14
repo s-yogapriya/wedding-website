@@ -17,7 +17,7 @@ export const HeroSection: React.FC = () => {
 
         {/* Eyebrow */}
         <p className="font-cinzel text-xs sm:text-sm tracking-[0.35em] text-[#8C6623] uppercase font-semibold mb-2">
-          The Auspicious Wedding Of
+          The Auspicious Celebration Of
         </p>
 
         {/* Bride Name & Titles */}
@@ -92,7 +92,7 @@ export const HeroSection: React.FC = () => {
         {/* Scroll down gentle prompt */}
         <div className="flex flex-col items-center mt-6 text-[#8C6623] animate-bounce opacity-80">
           <span className="font-cinzel text-[10px] tracking-[0.3em] uppercase mb-1">
-            Scroll for wedding details
+            Scroll for more details
           </span>
           <ChevronDown className="w-4 h-4" />
         </div>
