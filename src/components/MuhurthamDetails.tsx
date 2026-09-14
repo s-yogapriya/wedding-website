@@ -296,8 +296,21 @@ export const MuhurthamDetails: React.FC = () => {
                         text-[#4A0E17]
                       "
                     >
-                      16/09/2026 — 10:00 AM
+                      Wednesday, 16th September 2026
                     </h3>
+
+                    <p
+                      className="
+                        font-cinzel
+                        font-semibold
+                        text-sm
+                        sm:text-base
+                        text-[#5E1120]
+                        mt-0.5
+                      "
+                    >
+                      10:00 AM
+                    </p>
 
                   </div>
 
@@ -361,8 +374,21 @@ export const MuhurthamDetails: React.FC = () => {
                         text-[#4A0E17]
                       "
                     >
-                      16/09/2026 — 6:00 PM
+                      Wednesday, 16th September 2026
                     </h3>
+
+                    <p
+                      className="
+                        font-cinzel
+                        font-semibold
+                        text-sm
+                        sm:text-base
+                        text-[#5E1120]
+                        mt-0.5
+                      "
+                    >
+                      6:00 PM
+                    </p>
 
                   </div>
 

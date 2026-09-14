@@ -73,7 +73,7 @@ export const WelcomeCard: React.FC<WelcomeCardProps> = ({ onOpen, isUnlocked }) 
             <div className="flex flex-col items-center text-center">
               
               {/* Landscape Family Photo */}
-              <div className="relative w-full max-w-[175px] sm:max-w-[500px] overflow-hidden rounded-lg sm:rounded-xl border border-[#C5A059] sm:border-2 bg-[#F4EDE0] shadow-sm sm:shadow-md">
+              <div className="relative w-full max-w-[210px] sm:max-w-[500px] overflow-hidden rounded-lg sm:rounded-xl border border-[#C5A059] sm:border-2 bg-[#F4EDE0] shadow-sm sm:shadow-md">
                 <img
                   src="/images/totalfamily.jpg.jpeg"
                   alt="Family Portrait"
@@ -104,13 +104,13 @@ export const WelcomeCard: React.FC<WelcomeCardProps> = ({ onOpen, isUnlocked }) 
         </div>
 
         {/* Invitation Text Body */}
-        <div className="text-center my-1 sm:my-5 px-1 sm:px-2">
+        <div className="text-center mt-1 mb-0 sm:my-5 px-1 sm:px-2">
           <p className="font-cormorant text-xs sm:text-lg text-[#3A0810] leading-snug sm:leading-relaxed italic max-w-md mx-auto">
-            Cordially invite you with family and friends to share the joy of our beloved Daughter's wedding
+            Cordially invite you with family and friends to share the joy of our beloved Daughter's wedding and reception
           </p>
         </div>
 
-        <KolamDivider className="w-full max-w-[180px] sm:max-w-xs mx-auto my-1.5 sm:my-3 opacity-70" />
+        <KolamDivider className="w-full max-w-[180px] sm:max-w-xs mx-auto !my-0.5 sm:!my-3 opacity-70" />
 
         {/* Bride & Groom Highlights on Card */}
         <div className="text-center space-y-1 sm:space-y-2.5 px-1 sm:px-2">
